@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Indice biblioteca</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+		
+		<meta charset="UTF-8">
+		
+		
+	</head>
+	
+	<body class="bg-black">
+		<header>
+			<div class="container-fluid bg-dark">
+				<div class="row align-items-center">
+					<div class="col-3"></div>
+					
+					<div class="col-6 text-white text-center">
+						<h1>Libreria digital</h1>
+					</div>
+					
+					<div class="col-3 text-end p-3">
+						<img  width="50" height="70" src="img/logo.png">
+					</div>
+				</div>
+				<nav class="navbar-expand-sm">
+					<div class="container">
+						<ul class="navbar-nav text-white justify-content-between">
+							<li class="nav-item"><a class="nav-link" href="#soledad">Primera recomendacion</a></li>
+							<li class="nav-item"><a class="nav-link" href="#ceguera">Segunda recomendacion</a></li>
+							<li class="nav-item"><a class="nav-link" href="#rayuela">Tercera recomendacion</a></li>
+							<li class="nav-item"><a class="nav-link" href="Biblioteca.html" target="_blank">Solicitar libros</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>			
+		</header>
+		
+		<main>
+			<div class="container bg-secundary mx-auto text-white mt-4 ">
+				<h6 class="fs-bold">Breve descripción sobre nosotros</h6>
+				<p class="fs-semibold">
+					La Biblioteca Digital es una plataforma diseñada para acercar la cultura y el conocimiento a 
+					todos los usuarios, ofreciendo un amplio catálogo de libros digitales listos para leer en 
+					cualquier momento y lugar. Con el objetivo de expandir constantemente su colección y adaptarse 
+					a los gustos de su comunidad, el sitio cuenta con un <a href="Biblioteca.html" target="_blank">formulario</a> especial donde los lectores pueden 
+					rellenar sus datos y solicitar activamente aquellos títulos digitales que deseen ver incorporados 
+					en la página próximamente.
+				</p>
+			</div>
+			
+			<div class="container-fluid pt-5 bg-dark mt-3">
+				<h2 class="text-white text-center mb-5 fst-italic">Libros recomendados de esta semana</h2>
+				<div id="carruselLibros" class="carousel slide">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carruselLibros" data-bs-slide-to="0" class="active" 
+						aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carruselLibros" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carruselLibros" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active mb-5">
+							<a href="#soledad"><img class="d-block mx-auto" src="img/ciensoledad.jpg" width="400" height="400"></a>
+						</div>
+						<div class="carousel-item mb-5">
+							<a href="#ceguera"><img class="d-block mx-auto"src="img/ensayoceguera.jpg" width="400" height="400"></a>
+						</div>				
+						<div class="carousel-item mb-5">
+							<a href="#rayuela"><img class="d-block mx-auto" src="img/rayuela.png" width="400" height="400"></a>
+						</div>				
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carruselLibros" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					
+					<button class="carousel-control-next" type="button" data-bs-target="#carruselLibros" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>		
+				</div>			
+			</div>
+			
+			<div class="container-fluid">
+				<!--PRIMERA TARJETA-->
+
+				<div class="card bg-dark m-3">
+					<div class="row">
+						<div class="col-9">
+							<div class="card-header">
+								<p class="text-light fst-italic fw-semibold">Cien años de soledad, escrita por Gabriel García Márquez</p>
+							</div>
+							<div class="card-body d-flex flex-column gap-5 h-100">
+								<h6 class="card-title text-white fw-bold text-center" id="soledad">Cien años de soledad</h6>
+								<p class="card-text text-white">
+									La historia comienza con José Arcadio Buendía y Úrsula Iguarán, 
+									un matrimonio de primos que huyen de su pueblo natal perseguidos por la culpa y el 
+									miedo a engendrar un hijo con cola de cerdo, debido a su parentesco. Durante el éxodo, 
+									José Arcadio funda Macondo, un lugar aislado y fantástico donde lo cotidiano se mezcla con 
+									lo extraordinario. Tienen tres hijos: José Arcadio, Aureliano (quien se convertirá en coronel) 
+									y Amaranta. Úrsula se convertirá en el pilar matriarcal de la familia, viviendo más de un siglo.
+								</p>
+							</div>
+
+						</div>
+						<div class="col-3">
+							<img src="img/ciensoledad.jpg" class="card-img-bottom" height="400">
+						</div>
+				  </div>
+				  <div class="row">
+					<div class="col-12">
+						<div class="card-footer">
+							<p class="text-light font-monospace small">Comentario: Cien años de soledad es una novela magnífica a la altura de su reputación. 
+								Es la obra maestra del realismo mágico, donde lo cotidiano se entrelaza con lo 
+								fantástico de manera natural. El tema central es la soledad: la incapacidad de 
+								los personajes de amar y comunicarse, lo que los condena a repetir los errores y 
+								trágicos destinos de sus antepasados..</p>
+						</div>					
+					</div>
+				  </div>					
+				</div>
+				<!--SEGUNDA TARJETA-->
+				<div class="card bg-dark m-3">
+					<div class="row">
+						<div class="col-9">
+							<div class="card-header">
+								<p class="text-light fst-italic fw-semibold">Ensayo sobre la ceguera, escrita por José Saramago</p>
+							</div>
+							<div class="card-body d-flex flex-column gap-5 h-100">
+								<h6 class="card-title text-white fw-bold text-center" id="ceguera">Ensayo sobre la ceguera</h6>
+									<p class="card-text text-white">
+										En esta obra José Saramago nos asoma a los límites de nuestra conciencia a través 
+										de seis personajes anónimos dirigidos por una heroína (la mujer del médico), 
+										que han de hacer frente a una pandemia que se extiende por todo el mundo: la 
+										ceguera blanca.
+										
+										La novela sigue las desgracias de entre los primeros en ser golpeados por la 
+										enfermedad y se centra en "la esposa del médico", su esposo, varios de sus 
+										pacientes y varios otros, quienes se juntan por casualidad. Después de una 
+										larga y traumática cuarentena en un manicomio, el grupo se reúne en una unidad 
+										familiar para sobrevivir por su ingenio y por la inexplicable suerte de que la 
+										esposa del médico ha escapado de la ceguera. El origen repentino e inexplicable 
+										y la naturaleza de la ceguera causan un pánico generalizado, y el orden social 
+										se desintegra rápidamente a medida que el gobierno intenta contener el contagio 
+										aparente y mantener el orden a través de medidas cada vez más represivas e 
+										ineptas.
+										
+										En la primera parte del libro la narración se centra en los 
+										primeros infectados, estos son encerrados en campos de reclusión ante el pánico 
+										generalizado. A partir de su encierro se genera un caótico submundo, donde surgen
+										 los instintos más bajos del ser humano. Ante el miedo generalizado – los de 
+										 dentro, fruto de la incertidumbre producida por la ceguera, y los que permanecen
+										  en el mundo exterior por el miedo al contagio – "triunfan" los personajes más 
+										  amorales y que se aprovechan de la desesperación y el pánico generalizado.	
+									  </p>
+							</div>
+						</div>
+						<div class="col-3">
+							<img src="img/ensayoceguera.jpg" class="card-img-bottom" height="400">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="card-footer">
+								<p class="text-light font-monospace small">Comentario: Ensayo sobre la ceguera (1995), del 
+									Premio Nobel José Saramago, es una obra maestra de la literatura distópica y 
+									filosófica. Su premisa, donde una epidemia de "ceguera blanca" azota a la sociedad, 
+									funciona como una alegoría escalofriante de la condición humana..</p>
+							</div>					
+						</div>
+					</div>					
+				</div>
+		
+				<div class="card bg-dark m-3">
+					<div class="row">
+						<div class="col-9">
+							<div class="card-header">
+								<p class="text-light fst-italic fw-semibold">Rayuela, escrita por Julio Cortazar</p>
+							</div>
+							<div class="card-body d-flex flex-column gap-5 h-100">
+								<h6 class="card-title text-white fw-bold text-center" id="rayuela">Rayuela</h6>
+								<p class="card-text text-white">
+									Rayuela es la segunda novela del escritor argentino Julio Cortázar. Escrita en París 
+									y publicada por primera vez el 28 de junio de 1963, constituye una de las obras 
+									centrales del boom latinoamericano y de la literatura en español.
+
+									Narra la historia de Horacio Oliveira, su protagonista, y su relación con la Maga. 
+									La historia pone en juego la subjetividad del lector y tiene múltiples finales. A 
+									esta obra suele llamársela «antinovela», aunque el mismo Cortázar prefería denominarla
+									 «contranovela». Significó un salto al vacío que lo distanció de la seguridad 
+									 controlada de los cuentos fantásticos de su primera época como escritor para 
+									 adentrarse en una búsqueda sin hallazgos a través de preguntas sin respuesta
+
+									Si bien el estilo que se mantiene a lo largo de la novela es muy variado, según 
+									el propio Cortázar la obra de alguna manera es la experiencia de toda una vida 
+									y la tentativa de llevarla a la escritura	
+							  </p>
+						</div>
+					</div>
+					<div class="col-3">
+						<img src="img/rayuela.png" class="card-img-bottom" height="400">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="card-footer">
+							<p class="text-light font-monospace small">Comentario: Rayuela (1963) de Julio Cortázar es una obra 
+								maestra de la literatura y un hito del boom latinoamericano. Revolucionó la estructura 
+								narrativa al permitir una lectura no lineal y darle al lector un papel activo. Mezcla 
+								filosofía, jazz y poesía en un laberinto literario.</p>
+						</div>					
+					</div>
+				</div>					
+			</div>				
+																		
+			</div>
+			<!--TERMINAN LAS TARJETAS Y SE REDIRECCIONA AL FORMULARIO-->
+				
+			<div class="container-fluid bg-black text-white mt-4">
+				<div class="d-flex flex-column bg-dark mx-4 px-3 py-2 rounded-2">
+					<h6 class="fs-bold h4 text-center">Formulario</h6>
+					<p class="fs-semibold">
+						Para solicitar libros que usted desee que ofrezca nuestra biblioteca digital, le dejamos
+						debajo un acceso a nuestro formulario de libros. En ese formulario puede rellenar la información
+						para que nosotros consigamos el libro
+					</p>
+					<a class="btn btn-primary mx-auto w-100" href="Biblioteca.html" target="_blank" role="button">Formulario</a>				
+				</div>
+
+			</div>
+
+		</main>
+
+		<footer>
+			<div class="container-fluid bg-black h-100 w-100">
+				<div class="bg-dark mx-4 px-3 rounded-2 text-white  mt-4 bg-dark">	
+				   <a href="https://www.linkedin.com/in/lucas-santillan-01463b2a3/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
+				   <a href="mailto:lucassantillanrg@gmail.com">Contacto</a>
+				   <p class="fw-semibold fs-6">&copy; 2026 Biblioteca Digital. Diseñado y programado en HTML5 empleando el framework Boostrap 5 para la asignatura Laboratorio de Programación.</p>
+				   <p class="fw-bold fs-6">Para más información contáctese al 2966-35385</p>				
+			   </div>
+			</div>
+		</footer>	
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+
+
+
+
+</html>
